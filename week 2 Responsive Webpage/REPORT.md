@@ -156,31 +156,38 @@ Example:
     }
 
 }
+```
 
-7. Flexbox and CSS Grid
-Flexbox
+---
+
+# 7. Flexbox and CSS Grid
+
+### Flexbox
 
 Flexbox was used for:
 
-Navigation alignment
-Hero content
-Buttons
-Social icons
-Footer elements
-CSS Grid
+- Navigation alignment
+- Hero content
+- Buttons
+- Social icons
+- Footer elements
+
+### CSS Grid
 
 CSS Grid was used for:
 
-Features
-Services
-Portfolio
-Team
-Testimonials
-Statistics
+- Features
+- Services
+- Portfolio
+- Team
+- Testimonials
+- Statistics
 
 Grid layouts make it easier to create flexible and responsive content sections.
 
-8. JavaScript Implementation
+---
+
+# 8. JavaScript Implementation
 
 JavaScript was used to create an interactive responsive navigation menu.
 
@@ -188,93 +195,107 @@ The hamburger button allows users to open and close the navigation menu on mobil
 
 Additional JavaScript functionality includes:
 
-Mobile navigation toggle
-Changing hamburger icon to close icon
-Automatically closing the menu after selecting a navigation link
-Smooth scrolling
-Header shadow effect when scrolling
-9. Responsive Testing
+- Mobile navigation toggle
+- Changing hamburger icon to close icon
+- Automatically closing the menu after selecting a navigation link
+- Smooth scrolling
+- Header shadow effect when scrolling
+
+---
+
+# 9. Responsive Testing
 
 The website was tested using browser Developer Tools and different viewport sizes.
 
 The following screen categories were considered:
 
-Desktop
+### Desktop
 
 Large viewport layouts were checked for proper spacing, alignment, and navigation.
 
-Tablet
+### Tablet
 
 The layout was checked to ensure that cards, images, and text adjusted correctly.
 
-Mobile
+### Mobile
 
 The website was tested for:
 
-Navigation menu
-Button sizes
-Text readability
-Image scaling
-Single-column layouts
-Section spacing
-10. Challenges Faced
-Challenge 1: Responsive Navigation
+- Navigation menu
+- Button sizes
+- Text readability
+- Image scaling
+- Single-column layouts
+- Section spacing
+
+---
+
+# 10. Challenges Faced
+
+### Challenge 1: Responsive Navigation
 
 The desktop navigation menu could not be displayed in the same way on small screens.
 
-Solution:
+**Solution:**
 
 A hamburger menu was implemented using CSS and JavaScript. The navigation links are displayed when the menu button is clicked.
 
-Challenge 2: Different Screen Sizes
+### Challenge 2: Different Screen Sizes
 
 Maintaining a consistent layout across desktop, tablet, and mobile devices was challenging.
 
-Solution:
+**Solution:**
 
 CSS Media Queries, Flexbox, and CSS Grid were used to automatically adjust the layout according to the available screen width.
 
-Challenge 3: Image Responsiveness
+### Challenge 3: Image Responsiveness
 
 Large images could cause horizontal scrolling on smaller screens.
 
-Solution:
+**Solution:**
 
 Responsive image rules were implemented using flexible widths and:
 
+```css
 img{
     max-width:100%;
     display:block;
 }
+```
 
 This ensures that images remain within their containers.
 
-Challenge 4: Maintaining Consistent Spacing
+### Challenge 4: Maintaining Consistent Spacing
 
 Different screen sizes require different spacing values.
 
-Solution:
+**Solution:**
 
 Responsive padding, flexible grids, and media queries were used to adjust spacing for different viewport sizes.
 
-11. Learning Outcomes
+---
+
+# 11. Learning Outcomes
 
 Through this project, I improved my understanding of:
 
-Responsive Web Design
-HTML5 Semantic Structure
-CSS Flexbox
-CSS Grid
-CSS Media Queries
-CSS Variables
-Responsive Images
-Fluid Layouts
-JavaScript DOM Manipulation
-Mobile Navigation
-UI Design Principles
-Browser Developer Tools
-Clean Code Organization
-12. Conclusion
+- Responsive Web Design
+- HTML5 Semantic Structure
+- CSS Flexbox
+- CSS Grid
+- CSS Media Queries
+- CSS Variables
+- Responsive Images
+- Fluid Layouts
+- JavaScript DOM Manipulation
+- Mobile Navigation
+- UI Design Principles
+- Browser Developer Tools
+- Clean Code Organization
+
+---
+
+# 12. Conclusion
 
 This Week 2 project provided practical experience in developing a responsive website from scratch.
 
@@ -284,7 +305,11 @@ By using CSS Media Queries, Flexbox, CSS Grid, responsive images, and JavaScript
 
 Overall, this task strengthened my frontend development skills and improved my understanding of responsive web design principles.
 
-Project Files
+---
+
+# Project Files
+
+```text
 Static-Webpage/
 │
 ├── Week-1-Static-Webpage/
@@ -298,23 +323,14 @@ Static-Webpage/
     ├── REPORT.md
     │
     └── images/
-Author
+```
 
-Suman Kumar
+---
+
+# Author
+
+**Suman Kumar**
 
 Frontend Web Developer Intern
 
-Year: 2026
-
-
-### ✅ Ab Week 2 ka folder complete hai
-
-```text
-Week-2-Responsive-Webpage/
-│
-├── index.html      ✅
-├── style.css       ✅
-├── script.js       ✅
-├── README.md       ✅
-├── REPORT.md       ✅
-└── images/         ✅
+**Year: 2026**
