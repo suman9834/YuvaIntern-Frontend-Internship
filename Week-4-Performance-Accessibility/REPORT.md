@@ -198,8 +198,7 @@ The project fulfills all the objectives of Week 4 by delivering a fast, responsi
 
 repository link here:
 
-```
-https://github.com/suman9834/Static-Webpage
+```  https://github.com/suman9834/YuvaIntern-Frontend-Internship
 ```
 
 ---

@@ -190,7 +190,7 @@ The project successfully fulfills the objectives of Week 4 by creating a fast, r
 # GitHub Repository
 
 ```
-https://github.com/suman9834
+https://github.com/suman9834/YuvaIntern-Frontend-Internship
 ```
 
 ---

@@ -51,7 +51,7 @@ The objective of this project is to build a modern, fully responsive business we
 # 📂 Project Structure
 
 ```text
-Static-Webpage/
+YuvaIntern-Frontend-Internship/
 │
 ├── Week-1-Static-Webpage/
 │
