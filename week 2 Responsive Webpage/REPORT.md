@@ -310,7 +310,7 @@ Overall, this task strengthened my frontend development skills and improved my u
 # Project Files
 
 ```text
-Static-Webpage/
+YuvaIntern-Frontend-Internship/
 │
 ├── Week-1-Static-Webpage/
 │
