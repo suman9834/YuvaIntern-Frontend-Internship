@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TechSphere SPA Simulation - Frontend Web Developer Internship Week 5" />
+    <meta name="keywords" content="SPA, HTML, CSS, JavaScript, Frontend" />
+    <meta name="author" content="Suman Kumar" />
+    <title>TechSphere SPA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="loader">
+      <div class="spinner"></div>
+      <h2>Loading TechSphere...</h2>
+    </div>
+    <div id="progress-bar"></div>
+    <header>
+      <div class="container">
+        <a href="#home" class="logo" data-page="home">
+          <i class="fa-solid fa-code"></i> TechSphere
+        </a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home" data-page="home" class="active">Home</a></li>
+            <li><a href="#about" data-page="about">About</a></li>
+            <li><a href="#services" data-page="services">Services</a></li>
+            <li><a href="#portfolio" data-page="portfolio">Portfolio</a></li>
+            <li><a href="#contact" data-page="contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-buttons">
+          <button id="themeToggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button class="menu-btn" aria-label="Open Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="app">
+    </main>
+    <template id="home-template">
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1>Welcome to TechSphere SPA</h1>
+            <p>A modern Single Page Application simulation built using HTML, CSS and Vanilla JavaScript without page reloads.</p>
+            <a href="#services" class="btn" data-page="services">Explore Services</a>
+          </div>
+          <div class="hero-image">
+            <img src="assets/hero.jpg" alt="Hero Image" loading="lazy" />
+          </div>
+        </div>
+      </section>
+    </template>
+    <template id="about-template">
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>About Us</h2>
+            <p>TechSphere provides modern web development solutions with responsive design and excellent user experience.</p>
+          </div>
+          <div class="about-grid">
+            <div><img src="assets/about.jpg" alt="About Image" loading="lazy" /></div>
+            <div>
+              <h3>Who We Are</h3>
+              <p>We specialize in creating fast, responsive and interactive websites using modern frontend technologies.</p>
+              <ul>
+                <li>Responsive Design</li>
+                <li>Performance Optimized</li>
+                <li>SEO Friendly</li>
+                <li>Accessible UI</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </template>
+    <template id="services-template">
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Our Services</h2>
+            <p>We offer complete web solutions for businesses and startups.</p>
+          </div>
+          <div class="card-grid">
+            <div class="card"><i class="fa-solid fa-code"></i><h3>Web Development</h3><p>Responsive websites using HTML, CSS and JavaScript.</p></div>
+            <div class="card"><i class="fa-solid fa-mobile-screen-button"></i><h3>Responsive Design</h3><p>Mobile-first layouts for every screen size.</p></div>
+            <div class="card"><i class="fa-solid fa-chart-line"></i><h3>SEO Optimization</h3><p>Better visibility and improved search rankings.</p></div>
+          </div>
+        </div>
+      </section>
+    </template>
+    <template id="portfolio-template">
+      <section class="section">
+        <div class="container">
+          <div class="section-title"><h2>Our Portfolio</h2><p>Some of our recent responsive web projects.</p></div>
+          <div class="card-grid">
+            <div class="card"><img src="assets/project1.jpg" alt="Project 1" loading="lazy" /><h3>Business Website</h3><p>Modern responsive business website.</p></div>
+            <div class="card"><img src="assets/project2.jpg" alt="Project 2" loading="lazy" /><h3>E-Commerce Store</h3><p>Online shopping website with clean UI.</p></div>
+            <div class="card"><img src="assets/project3.jpg" alt="Project 3" loading="lazy" /><h3>Personal Portfolio</h3><p>Portfolio website for developers.</p></div>
+          </div>
+        </div>
+      </section>
+    </template>
+    <template id="contact-template">
+      <section class="section">
+        <div class="container">
+          <div class="section-title"><h2>Contact Us</h2><p>We'd love to hear from you.</p></div>
+          <form id="contactForm">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <textarea rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </template>
+    <template id="notfound-template">
+      <section class="section">
+        <div class="container center">
+          <h1>404</h1>
+          <h2>Page Not Found</h2>
+          <p>The page you requested does not exist.</p>
+          <a href="#home" class="btn" data-page="home">Back to Home</a>
+        </div>
+      </section>
+    </template>
+    <footer>
+      <div class="container">
+        <h3>TechSphere SPA</h3>
+        <p>Built using HTML5, CSS3 and Vanilla JavaScript.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/suman9834" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="copyright">© 2026 TechSphere SPA | Developed by <strong>Suman Kumar</strong></p>
+      </div>
+    </footer>
+    <button id="topBtn" class="top-btn" aria-label="Scroll to Top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
