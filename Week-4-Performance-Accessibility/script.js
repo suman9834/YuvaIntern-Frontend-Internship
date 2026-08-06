@@ -215,11 +215,6 @@ revealElements.forEach((item) => {
 window.addEventListener("scroll", revealOnScroll);
 
 window.addEventListener("load", revealOnScroll);
-
-// ===============================
-// Lazy Loading Images
-// ===============================
-
 const lazyImages = document.querySelectorAll("img");
 
 if ("loading" in HTMLImageElement.prototype) {
@@ -228,20 +223,11 @@ if ("loading" in HTMLImageElement.prototype) {
   });
 }
 
-// ===============================
-// Performance
-// ===============================
-
 window.addEventListener("load", () => {
   console.log("✅ Images Loaded");
 });
 
 console.log("✅ Script Part 2 Loaded");
-
-// ===============================
-// FAQ Accordion
-// ===============================
-
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach((item) => {
@@ -289,11 +275,6 @@ faqItems.forEach((item) => {
     }
   });
 });
-
-// ===============================
-// Contact Form Validation
-// ===============================
-
 const form = document.querySelector(".contact form");
 
 if (form) {
@@ -327,10 +308,6 @@ if (form) {
     form.reset();
   });
 }
-
-// ===============================
-// Animated Counter
-// ===============================
 
 const counters = document.querySelectorAll(".stat-box h2");
 

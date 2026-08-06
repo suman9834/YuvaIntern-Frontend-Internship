@@ -1,21 +1,10 @@
-/* =====================================
-   WEEK 3 - Part 1
-   Navigation & Header
-===================================== */
-
-// ----------------------------
-// Mobile Menu
-// ----------------------------
-
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
 if (menuBtn && navLinks) {
 
     menuBtn.addEventListener("click", () => {
-
         navLinks.classList.toggle("active");
-
         const icon = menuBtn.querySelector("i");
 
         if (icon) {
@@ -25,45 +14,27 @@ if (menuBtn && navLinks) {
             } else {
                 icon.classList.replace("fa-xmark", "fa-bars");
             }
-
         }
-
     });
 
     document.querySelectorAll(".nav-links a").forEach(link => {
-
         link.addEventListener("click", () => {
-
             navLinks.classList.remove("active");
-
             const icon = menuBtn.querySelector("i");
-
             if (icon) {
                 icon.classList.replace("fa-xmark", "fa-bars");
             }
-
         });
-
     });
 
 }
 
-
-// ----------------------------
-// Sticky Header
-// ----------------------------
-
 const header = document.querySelector("header");
-
 window.addEventListener("scroll", () => {
-
     if (!header) return;
-
     if (window.scrollY > 60) {
-
         header.style.boxShadow = "0 10px 25px rgba(0,0,0,.15)";
         header.style.background = "rgba(15,23,42,.98)";
-
     } else {
 
         header.style.boxShadow = "none";

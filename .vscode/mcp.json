@@ -1,0 +1,14 @@
+{
+	"servers": {
+		"io.github.oleksiijko/pmb-ai": {
+			"type": "stdio",
+			"command": "uvx",
+			"args": [
+				"pmb-ai@1.1.0"
+			],
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.1.0"
+		}
+	},
+	"inputs": []
+}

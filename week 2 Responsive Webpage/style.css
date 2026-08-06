@@ -759,37 +759,28 @@ footer {
 }
 
 .footer-content h2 {
-
     color: white;
     margin-bottom: 15px;
-
 }
 
 .footer-content p {
-
     margin-bottom: 20px;
-
 }
 
 .footer-social {
-
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-bottom: 25px;
-
 }
 
 .footer-social a {
-
     color: white;
     font-size: 24px;
     transition: .3s;
-
 }
 
 .footer-social a:hover {
-
     color: #38bdf8;
 
 }
@@ -798,59 +789,35 @@ footer {
 
     font-size: 14px;
     opacity: .8;
-
 }
 
-/* =====================================
-   Responsive Design
-===================================== */
-
 @media(max-width:992px) {
-
+    
     .hero {
-
         flex-direction: column-reverse;
         text-align: center;
-
     }
-
     .hero-content h1 {
-
         font-size: 42px;
-
     }
-
     .about {
-
         grid-template-columns: 1fr;
         text-align: center;
-
     }
-
     .about-content h2 {
-
         text-align: center;
-
     }
-
 }
 
 @media(max-width:768px) {
 
     .navbar {
-
         flex-wrap: wrap;
-
     }
-
     .menu-btn {
-
         display: block;
-
     }
-
     .nav-links {
-
         display: none;
         width: 100%;
         flex-direction: column;
@@ -858,7 +825,6 @@ footer {
         padding: 20px 0;
         margin-top: 20px;
         text-align: center;
-
     }
 
     .nav-links.active {

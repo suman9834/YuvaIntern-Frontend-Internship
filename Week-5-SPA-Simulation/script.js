@@ -1,149 +1,85 @@
-/* =====================================
-   TechSphere SPA Simulation
-   Week 5 - Frontend Internship
-   Author : Suman Kumar
-=====================================*/
 
 const app = document.getElementById("app");
 
 const templates = {
-
     home: document.getElementById("home-template"),
-
     about: document.getElementById("about-template"),
-
     services: document.getElementById("services-template"),
-
     portfolio: document.getElementById("portfolio-template"),
-
     contact: document.getElementById("contact-template"),
-
     notfound: document.getElementById("notfound-template")
-
 };
 
 function renderPage(page){
-
     const template = templates[page] || templates.notfound;
-
     app.innerHTML = "";
-
     app.appendChild(template.content.cloneNode(true));
-
     app.firstElementChild.classList.add("fade");
-
     updateActiveLink(page);
-
     window.scrollTo({
-
         top:0,
-
         behavior:"smooth"
-
     });
-
 }
 
 function updateActiveLink(page){
-
     document.querySelectorAll(".nav-links a").forEach(link=>{
-
         link.classList.remove("active");
-
         if(link.dataset.page===page){
-
             link.classList.add("active");
-
         }
-
     });
-
 }
 
 function navigate(page){
-
     history.pushState(
-
         {page},
-
         "",
-
         "#" + page
-
     );
-
     renderPage(page);
-
 }
 
 document.addEventListener("click",e=>{
-
     const link=e.target.closest("[data-page]");
-
     if(!link) return;
-
     e.preventDefault();
-
     navigate(link.dataset.page);
-
 });
 
 window.addEventListener("popstate",()=>{
-
     const page=
-
         location.hash.replace("#","") ||
-
         "home";
-
     renderPage(page);
-
 });
 
 window.addEventListener("DOMContentLoaded",()=>{
-
     const page=
-
         location.hash.replace("#","") ||
-
         "home";
-
     renderPage(page);
-
 });
 
 const menuBtn=document.querySelector(".menu-btn");
-
 const navLinks=document.querySelector(".nav-links");
-
 menuBtn.addEventListener("click",()=>{
 
     navLinks.classList.toggle("active");
-
     const icon=menuBtn.querySelector("i");
-
     if(navLinks.classList.contains("active")){
-
         icon.classList.replace(
-
             "fa-bars",
-
             "fa-xmark"
-
         );
-
     }
 
     else{
 
         icon.classList.replace(
-
             "fa-xmark",
-
             "fa-bars"
-
         );
-
     }
 
 });

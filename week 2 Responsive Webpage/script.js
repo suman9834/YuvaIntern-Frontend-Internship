@@ -1,7 +1,3 @@
-/* =====================================
-   Responsive Navigation Menu
-===================================== */
-
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
@@ -19,10 +15,6 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-/* =====================================
-   Close Menu After Clicking a Link
-===================================== */
-
 document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("active");
@@ -34,12 +26,7 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
   });
 });
 
-/* =====================================
-   Sticky Header Shadow on Scroll
-===================================== */
-
 const header = document.querySelector("header");
-
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
     header.style.boxShadow = "0 10px 25px rgba(0,0,0,0.15)";

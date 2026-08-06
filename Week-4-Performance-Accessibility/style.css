@@ -1,12 +1,3 @@
-/* =====================================
-   Week 4 - Performance & Accessibility
-   Author : Suman Kumar
-===================================== */
-
-/* ===============================
-   CSS Variables
-=============================== */
-
 :root {
 
     --primary: #2563eb;
@@ -24,11 +15,6 @@
     --transition: .3s ease;
 
 }
-
-
-/* ===============================
-   Reset
-=============================== */
 
 * {
 
@@ -50,40 +36,28 @@ body {
     background: var(--light);
     color: var(--text);
     line-height: 1.7;
-
 }
 
 img {
 
     max-width: 100%;
     display: block;
-
 }
 
 a {
-
     text-decoration: none;
     color: inherit;
-
 }
 
 ul {
 
     list-style: none;
-
 }
 
 .container {
-
     width: min(90%, 1200px);
     margin: auto;
-
 }
-
-
-/* ===============================
-   Progress Bar
-=============================== */
 
 #progress-bar {
 
@@ -98,48 +72,30 @@ ul {
 }
 
 
-/* ===============================
-   Header
-=============================== */
-
 header {
-
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-
     background: rgba(15, 23, 42, .92);
-
     backdrop-filter: blur(8px);
-
     z-index: 1000;
-
 }
 
 header .container {
 
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     padding: 18px 0;
 
 }
 
-
-/* Logo */
-
 .logo {
 
     color: var(--white);
-
     font-size: 1.5rem;
-
     font-weight: 700;
-
 }
 
 .logo i {
@@ -149,9 +105,6 @@ header .container {
 
 }
 
-
-/* Navigation */
-
 .nav-links {
 
     display: flex;
@@ -160,100 +113,55 @@ header .container {
 }
 
 .nav-links a {
-
     color: var(--white);
-
     font-weight: 500;
-
     transition: var(--transition);
-
 }
 
 .nav-links a:hover,
-
 .nav-links a.active {
-
     color: #38bdf8;
-
 }
-
-
-/* Mobile Menu */
 
 .menu-btn {
-
     display: none;
-
     background: none;
-
     border: none;
-
     color: #fff;
-
     font-size: 1.6rem;
-
     cursor: pointer;
-
 }
 
-
-/* ===============================
-   Hero Section
-=============================== */
-
 .hero {
-
     min-height: 100vh;
-
     display: flex;
-
     align-items: center;
-
     padding: 120px 0 80px;
-
 }
 
 .hero-container {
-
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 60px;
-
     align-items: center;
-
 }
 
 .hero-content h1 {
-
     font-size: 3rem;
-
     color: var(--secondary);
-
     line-height: 1.2;
-
     margin-bottom: 20px;
-
 }
 
 .hero-content p {
-
     font-size: 1.1rem;
-
     margin-bottom: 35px;
-
 }
-
-
-/* Buttons */
 
 .hero-buttons {
 
     display: flex;
-
     gap: 20px;
-
     flex-wrap: wrap;
 
 }
@@ -261,13 +169,9 @@ header .container {
 .btn {
 
     display: inline-block;
-
     padding: 14px 28px;
-
     border-radius: var(--radius);
-
     transition: var(--transition);
-
     font-weight: 600;
 
 }
@@ -275,7 +179,6 @@ header .container {
 .btn-primary {
 
     background: var(--primary);
-
     color: #fff;
 
 }
@@ -289,55 +192,36 @@ header .container {
 .btn-secondary {
 
     border: 2px solid var(--primary);
-
     color: var(--primary);
 
 }
 
 .btn-secondary:hover {
-
     background: var(--primary);
-
     color: #fff;
 
 }
-
-
-/* Hero Image */
-
 .hero-image img {
 
     width: 100%;
-
     border-radius: 20px;
-
     box-shadow: var(--shadow);
 
 }
 
-
-/* ===============================
-   Responsive
-=============================== */
-
 @media(max-width:768px) {
 
     .hero-container {
-
         grid-template-columns: 1fr;
-
         text-align: center;
-
     }
 
     .hero-buttons {
-
         justify-content: center;
 
     }
 
     .menu-btn {
-
         display: block;
 
     }
@@ -345,34 +229,20 @@ header .container {
     .nav-links {
 
         position: absolute;
-
         top: 100%;
-
         left: 0;
-
         width: 100%;
-
         background: var(--secondary);
-
         display: none;
-
         flex-direction: column;
-
         padding: 25px;
-
     }
-
     .nav-links.active {
 
         display: flex;
 
     }
-
 }
-
-/* =====================================
-   About Section
-===================================== */
 
 .about {
 
@@ -383,7 +253,6 @@ header .container {
 .section-title {
 
     text-align: center;
-
     margin-bottom: 60px;
 
 }
@@ -391,31 +260,22 @@ header .container {
 .section-title h2 {
 
     font-size: 2.4rem;
-
     color: var(--secondary);
-
     margin-bottom: 15px;
 
 }
 
 .section-title p {
-
     max-width: 700px;
-
     margin: auto;
-
     color: #64748b;
 
 }
 
 .about-container {
-
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 60px;
-
     align-items: center;
 
 }
@@ -423,7 +283,6 @@ header .container {
 .about-image img {
 
     border-radius: 20px;
-
     box-shadow: var(--shadow);
 
 }
@@ -431,37 +290,27 @@ header .container {
 .about-content h3 {
 
     font-size: 2rem;
-
     margin-bottom: 20px;
-
     color: var(--secondary);
 
 }
 
 .about-content p {
-
     margin-bottom: 18px;
 
 }
 
 .about-list {
-
     margin-top: 25px;
 
 }
 
 .about-list li {
-
     display: flex;
-
     align-items: center;
-
     gap: 12px;
-
     margin-bottom: 15px;
-
     font-weight: 500;
-
 }
 
 .about-list i {
@@ -470,25 +319,15 @@ header .container {
 
 }
 
-
-/* =====================================
-   Features
-===================================== */
-
 .features {
-
     background: #ffffff;
-
     padding: 100px 0;
 
 }
 
 .feature-grid {
-
     display: grid;
-
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
     gap: 30px;
 
 }
@@ -1213,50 +1052,27 @@ footer hr {
 
 }
 
-
-
-/* =====================================
-   Scroll To Top
-===================================== */
-
 #topBtn {
-
     position: fixed;
-
     right: 25px;
-
     bottom: 25px;
-
     width: 50px;
-
     height: 50px;
-
     border: none;
-
     border-radius: 50%;
-
     background: var(--primary);
-
     color: #fff;
-
     font-size: 22px;
-
     cursor: pointer;
-
     display: none;
-
     z-index: 999;
-
     box-shadow: var(--shadow);
-
     transition: var(--transition);
 
 }
 
 #topBtn:hover {
-
     background: var(--primary-dark);
-
     transform: translateY(-3px);
 
 }
